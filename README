@@ -1,0 +1,24 @@
+Email classification problem:
+
+Build a model to classify direct vs. general email addresses.
+
+Approach:
+
+1. Load and read the .csv file containing emails
+2. Define a list with words that general emails usually use -> general_words_list
+3. Define a empty list for saving the result (match) -> general_emails
+4. Define a empty list for saving the result (match) -> personal_emails
+5. Write a algorithm:
+    Iterate through every row in csv file
+    Save row in get_email_lower
+    Iterate through general_words_list
+    Compare if get_email_lower in general_words_list
+        If true add the email to general_emails
+        Else, add the email to personal_emails
+6.Save the results in a csv output file ‘classified_emails.csv’
+
+
+Future work:
+
+Write a API to find the urls of emails located on the Internet
+
